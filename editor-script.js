@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
     $("#editor-A001Beta-html").text('<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="UTF-8">\n<meta http-equiv="X-UA-Compatible" content="IE=edge">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<title>Document</title>\n</head>\n<body>\n    \n</body>\n</html>');
+    $("#editor-A001Beta-css").text('* {\n    box-sizing: border-box;\n}');
 
     const params = new URLSearchParams(window.location.search);
     if (params.has("code")) {
