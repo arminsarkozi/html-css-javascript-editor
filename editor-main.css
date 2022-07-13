@@ -1,0 +1,83 @@
+/* Copyright (c) 2022 arminsarkozi (MIT License): https://raw.githubusercontent.com/arminsarkozi/html-css-javascript-editor/main/LICENSE */
+
+/* ==== GENERAL STYLES ==== */
+* {
+    box-sizing: border-box;
+}
+
+fieldset[class="editor"], #editor-A001Beta-html, #editor-A001Beta-css, #editor-A001Beta-javascript, fieldset[class="editor"] > legend, body[id="editor-A001Beta-BODY"] {
+    background-color: rgb(50, 45, 45);
+    color: white;
+}
+
+fieldset[class="editor"] > legend {
+    border-radius: 4px;
+}
+
+#editor-result-embed-A001Beta, #editor-result-parent-element-A001Beta, #editor-result-parent-element-A001Beta > legend {
+    background-color: white;
+    color: black;
+}
+
+#editor-result-parent-element-A001Beta > legend {
+    border-radius: 4px;
+}
+
+.editor {
+    display: inline-block;
+    width: calc(100% / 3 - 1%);
+    height: 45vh;
+    outline: none;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 768px) {
+
+        .editor {
+            display: block;
+            width: 100%;
+            margin-bottom: 9px;
+        }
+
+}
+
+.editor textarea {
+    width: 100%;
+    height: 100%;
+}
+
+#editor-result-embed-A001Beta {
+    width: 100%;
+    height: 58vh;
+    border: 1.8px solid black;
+}
+
+#copyProjectLink-A001 {
+    margin: 10px;
+    margin-left: 0;
+    padding: 6px;
+    background-color: rgb(111, 177, 207);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#copyProjectLink-A001:hover {
+    background-color: rgb(69, 122, 172);
+}
+
+#path-label-project-link {
+    display: none;
+}
+
+#license-text-A001 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#license-text-A001 > label, #license-text-A001 > label > a {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;;
+    font-weight: 400;
+}

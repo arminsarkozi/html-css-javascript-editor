@@ -1,0 +1,33 @@
+<!-- Copyright (c) 2022 arminsarkozi (MIT License): https://raw.githubusercontent.com/arminsarkozi/html-css-javascript-editor/main/LICENSE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS & JavaScript Editor</title>
+    <link rel="stylesheet" type="text/css" href="editor-main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="editor-script.js"></script>
+</head>
+<body id="editor-A001Beta-BODY">
+    <fieldset class="editor">
+        <legend>index.html</legend>
+        <textarea id="editor-A001Beta-html"></textarea>
+    </fieldset>
+    <fieldset class="editor">
+        <legend>main.css</legend>
+        <textarea id="editor-A001Beta-css"></textarea>
+    </fieldset>
+    <fieldset class="editor">
+        <legend>script.js</legend>
+        <textarea id="editor-A001Beta-javascript"></textarea>
+    </fieldset>
+    <fieldset id="editor-result-parent-element-A001Beta" style="border-radius: 8px;">
+        <legend id="editor-A001Beta-legend">Output</legend>
+        <iframe id="editor-result-embed-A001Beta" srcdoc=''></iframe>
+        <button id="copyProjectLink-A001" onclick="copyPath()">Copy project link</button>
+        <label id="path-label-project-link"></label>
+    </fieldset>
+    <div id="license-text-A001"><label><a href="https://raw.githubusercontent.com/arminsarkozi/html-css-javascript-editor/main/LICENSE">Copyright (c) 2022 arminsarkozi (MIT License)</a></label></div>
+</html>
