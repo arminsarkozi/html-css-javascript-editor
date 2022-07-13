@@ -35,7 +35,7 @@ function letcode() {
     let code = '<style>' + css + '</style>' + html + '<script>' + javascript + '</script>';
     $("#editor-result-embed-A001Beta").attr('srcdoc', code);
     
-    $("#path-label-project-link").text("https://" + window.location.hostname + "?code&html=" + encodeURI(html) + "&css=" + encodeURI(css) + "&javascript=" + encodeURI(javascript));
+    $("#path-label-project-link").text("https://" + window.location.hostname + "/html-css-javascript-editor?code&html=" + encodeURI(html) + "&css=" + encodeURI(css) + "&javascript=" + encodeURI(javascript));
 }
 
 function originalCopyText() {
